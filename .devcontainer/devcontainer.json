@@ -1,17 +1,11 @@
 {
-  "name": "Cloudflar, Wranlger + Neovim Dev",
-  "image": "mcr.microsoft.com/devcontainers/base:debian",
-  "features": {
-    "ghcr.io/devcontainers/features/node:1": {
-      "version": "20"
-    }
+  "name": "Minimal Codespace with Neovim",
+  "build": {
+    "dockerfile": "Dockerfile"
   },
-  "postCreateCommand": "apt update && apt install -y neovim && npm install -g wrangler",
   "customizations": {
     "vscode": {
-      "extensions": [
-        "asvetliakov.vscode-neovim"
-      ]
+      "extensions": []
     }
   }
 }
